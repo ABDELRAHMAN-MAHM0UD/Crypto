@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 class GetCoinsUseCase @Inject constructor(val repo: CoinRepo) {
 
-    suspend operator fun invoke(): Flow<Resources<List<Coin>>> = flow {
+     operator fun invoke(): Flow<Resources<List<Coin>>> = flow {
         try{
         emit(Resources.Loading())
            val coins = repo.getCoins().map{it.toCoin()}

@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 class GetCoinUseCase @Inject constructor(val repo: CoinRepo) {
 
-    suspend operator fun invoke(coinId: String): Flow<Resources<CoinDetails>> = flow {
+    operator fun invoke(coinId: String): Flow<Resources<CoinDetails>> = flow {
         try{
         emit(Resources.Loading())
            val coinDetails = repo.getCoinById(coinId)
