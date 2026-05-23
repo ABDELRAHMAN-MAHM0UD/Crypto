@@ -29,7 +29,7 @@ class CoinDetailsViewModel @Inject constructor(
     // 2. عملنا init عشان الدالة تشتتغل أوتوماتيك أول ما الـ ViewModel يتولد
     init {
         savedStateHandle.get<String>(Constants.PARM_ID)?.let{coinId ->
-            getCoin(coinId)
+            getCoin(coinId) //
         }
     }
 
