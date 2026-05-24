@@ -21,6 +21,7 @@ import androidx.navigation.NavController
 import com.example.crypto.domain.model.CoinDetails
 import com.example.crypto.presentation.coin_detail.components.CoinTag
 import com.example.crypto.presentation.coin_detail.components.TeamListItem
+import com.google.accompanist.flowlayout.FlowRow
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -66,6 +67,8 @@ fun CoinDetailScreen(
                     )
                     Spacer(modifier = Modifier.height(15.dp))
                     FlowRow(
+                        mainAxisSpacing = 10.dp,
+                        crossAxisSpacing = 10.dp,
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         coin.tags.forEach { tag ->
