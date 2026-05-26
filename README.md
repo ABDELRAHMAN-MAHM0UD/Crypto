@@ -82,4 +82,24 @@ com.example.crypto
     ├── coin_list      # UI Composables & ViewModels for list screen
     ├── coin_detail    # UI Composables & ViewModels for details screen
     └── ui/theme       # Centralized design system tokens (Color, Type)
+```
 
+---
+
+
+## 🚀 Getting Started
+### Prerequisites
+Android Studio Jellyfish / Ladybug or newer.
+
+JDK 17 configured in Android Studio settings.
+
+### Installation
+Clone the repository:
+
+### Bash
+```
+git clone https://github.com/ABDELRAHMAN-MAHM0UD/Crypto.git
+```
+Open the project in Android Studio and let Gradle sync.
+
+Build and Run on your emulator or physical device.
